@@ -1,1 +1,3 @@
-json.extract! user, :username
+if logged_in?
+  json.extract! user, :username
+end
